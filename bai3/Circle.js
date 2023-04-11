@@ -7,7 +7,7 @@ var Circle = /** @class */ (function () {
         this.name = name;
     }
     Circle.prototype.resize = function (percent) {
-        return this.radius += (this.radius * percent) / 100;
+        this.radius += (this.radius * percent) / 100;
     };
     Circle.prototype.getArea = function () {
         return this.radius * this.radius * Math.PI;

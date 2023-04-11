@@ -1,29 +1,29 @@
 import {Resizeable} from "./resize";
 
 export class Retangle implements Resizeable {
-    weight: number
+    width: number
     height: number
 
 
-    constructor(weight: number, height: number) {
+    constructor(width: number, height: number) {
         this.height = height
-        this.weight = weight
+        this.width = width
 
     }
 
     resize(percent: number) {
         this.height += (this.height * percent) / 100
-        this.weight += (this.weight * percent) / 100
+        this.width += (this.width * percent) / 100
 
 
     }
 
     getArea() {
-        return this.weight * this.height
+        return this.width * this.height
     }
 
     getPerimeter() {
-        return (this.weight + this.height) * 2
+        return (this.width + this.height) * 2
     }
 
 
